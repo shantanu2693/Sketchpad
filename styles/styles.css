@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid black;
+    background-color: ghostwhite;
 
 }
 
@@ -13,12 +13,12 @@
     flex: none;
     width: 100vw;
     height: 20vh;
-    border:1px solid blueviolet;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: gainsboro;
 }
 
 p {
@@ -33,12 +33,12 @@ p {
     flex:none;
     width: 100vw;
     height: 10vh;
-    border:1px solid green;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: aliceblue;
 }
 
 button {
@@ -52,6 +52,16 @@ button {
     width: 50vw;
     height:50vh;
     flex: none;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    background-color: white;
 }
+
+.hovered {
+    background-color: black;
+    border:1px solid black;
+}
+
+
 
