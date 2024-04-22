@@ -48,6 +48,13 @@ function createGrid(){
             
             newVerticalDiv.addEventListener("mouseover",() => {
                 newVerticalDiv.classList.add("hovered");
+
+                let x = parseInt(Math.random()*256);
+                let y = parseInt(Math.random()*256);
+                let z = parseInt(Math.random()*256);
+
+                newVerticalDiv.style.backgroundColor = `rgb(${x},${y},${z})`; 
+                newVerticalDiv.style.border = "1px solid black";
             });
         }
     }
