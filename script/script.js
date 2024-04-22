@@ -40,6 +40,8 @@ function createGrid(){
 
         for (j=0;j<userInput;j++){
             const newVerticalDiv = document.createElement("div");
+            let opacityValue = 0.1;
+
             
             newHorizontalDiv.appendChild(newVerticalDiv);
 
@@ -47,14 +49,12 @@ function createGrid(){
             newVerticalDiv.style.flex = "auto";   
             
             newVerticalDiv.addEventListener("mouseover",() => {
-                newVerticalDiv.classList.add("hovered");
 
-                let x = parseInt(Math.random()*256);
-                let y = parseInt(Math.random()*256);
-                let z = parseInt(Math.random()*256);
-
-                newVerticalDiv.style.backgroundColor = `rgb(${x},${y},${z})`; 
+                newVerticalDiv.style.backgroundColor = "black"; 
                 newVerticalDiv.style.border = "1px solid black";
+                newVerticalDiv.style.opacity = `${opacityValue}`;
+
+                opacityValue += 0.1;
             });
         }
     }
